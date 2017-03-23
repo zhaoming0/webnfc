@@ -17,6 +17,9 @@
 <pre id="idl">
 interface Navigator {
 };
+</pre>
+
+<pre id="generic-idl">
 enum NFCRecordType {
     "empty",
     "text",
@@ -60,9 +63,6 @@ dictionary NFCWatchOptions {
     NFCWatchMode   mode = "web-nfc-only";
 };
 
-</pre>
-
-<pre id="generic-idl">
 partial interface Navigator {
     readonly attribute NFC nfc;
 };
